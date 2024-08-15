@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Getting Started with Next.js",
+    "tag": "Creative",
+    "duration": "5 mins",
+    "imageUrl": "https://picsum.photos/700/700",
+    "content": "Next.js is a popular React framework that makes building web applications a breeze..."
+  },
+  {
+    "id": "2",
+    "name": "The Power of TypeScript",
+    "tag": "Content",
+    "duration": "7 mins",
+    "imageUrl": "https://picsum.photos/700/700",
+    "content": "TypeScript, a superset of JavaScript, brings static typing to your projects..."
+  },
+  {
+    "id": "3",
+    "name": "The saleswoman closing 33% of cold pitches",
+    "tag": "Sales",
+    "duration": "2 mins",
+    "imageUrl": "https://picsum.photos/700/700",
+    "content": "Text..."
+  },
+  {
+    "id": "4",
+    "name": "Posting seltzer. Making money",
+    "tag": "Social",
+    "duration": "30 secs",
+    "imageUrl": "https://picsum.photos/700/700",
+    "content": "Text..."
+  }
+]
