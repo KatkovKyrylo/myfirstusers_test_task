@@ -11,23 +11,28 @@ type Props = {
 };
 
 export const PostModal: FC<Props> = ({
-  post: { id, name, tag, duration, imageUrl, content },
+  post: { id, title, tag, duration, imageUrl, content },
 }) => {
   const router = useRouter();
 
   const handleClose = () => router.back();
 
   useEffect(() => {
-    document.title = name;
-  }, [name]);
+    document.title = title;
+  }, [title]);
 
   return (
-    <Modal title={name} onClose={handleClose}>
+    <Modal title={title} onClose={handleClose}>
       <p>Duration: {duration}</p>
       <p>Tag: {tag}</p>
       <p>Content: {content}</p>
       <br />
-      <Image src={imageUrl + '?' + id} alt={name} width={600} height={600} />
+      <Image
+        src={imageUrl + '?id=' + id}
+        alt={title}
+        width={600}
+        height={600}
+      />
     </Modal>
   );
 };
