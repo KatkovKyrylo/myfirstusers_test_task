@@ -35,6 +35,14 @@ const MarketingDashboard: FC<Props> = ({ params: { filters = '' } }) => {
           <button className='bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-2 rounded-lg text-sm font-semibold text-white'>
             Yes Please :)
           </button>
+          <Link href='/posts/create'>
+            <button
+              tabIndex={0}
+              className='bg-green-600 hover:bg-green-700 transition-colors px-4 py-2 rounded-lg text-sm font-semibold text-white'
+            >
+              Add new post
+            </button>
+          </Link>
         </div>
       </header>
 
@@ -74,7 +82,7 @@ const MarketingDashboard: FC<Props> = ({ params: { filters = '' } }) => {
             <Link key={index} href={`/posts/${example.id}`} className='h-fit'>
               <Card className='bg-gray-100 hover:bg-gray-200 transition-colors p-6 rounded-xl shadow-md cursor-pointer'>
                 <h3 className='font-bold text-lg mb-3 text-blue-600'>
-                  {example.name}
+                  {example.title}
                 </h3>
                 <div className='flex justify-between items-center'>
                   <span className='text-sm text-gray-600'>
